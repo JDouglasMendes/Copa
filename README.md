@@ -10,6 +10,11 @@ Implementação do desafio Copa de Equipes.
 ![Azure DevOps tests (compact)](https://img.shields.io/azure-devops/tests/douglasaleixomendes/copa/2)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/douglasaleixomendes/Copa/2)
 
+### Sobre a Cobertura dos testes
+* Aparentemente o coverlet no Azure DevOps não detecta que alguns métodos que foi implementado utilizando _body expression_ do C# teve o teste. 
+* Para verificar a cobertura de testes real executar com o comando abaixo:
+* `dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput="./TestResults/"`
+
 ### Frameworks e linguagens utilizadas na implementação da aplicação
 C# | Typescript | Asp Net Core 3.1 | Angular 10 | XUnit | RestSharp | AutoMapper
 
