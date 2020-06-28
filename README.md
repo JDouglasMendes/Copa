@@ -27,7 +27,7 @@ Visual Code - Front End | Visual Studio - Back End
   * Entrar na pasta desafio-a-copa
   * Executar o comando `npm install`, aguarde a finalização.
   * Executar o comando `ng serve`, aguarde a finalização.
-  * Acessar o browser no endereço __localhost:4200__
+  * Acessar o browser no endereço _http://localhost:4200_
 * Para executar o Back End
   * Entrar na pasta desafio-a-copa-server
   * Se utilizar _Visual Studio_ compilar o projeto e executar preferencialmente pela opção _Copa.Web.API_
