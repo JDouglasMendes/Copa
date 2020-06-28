@@ -59,3 +59,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+desafio-a-copa-server/Copa/Copa.Domain.Test/TestResults/coverage.cobertura.xml
+desafio-a-copa-server/Copa/Copa.Web.API.Integration.Test/TestResults/coverage.cobertura.xml
