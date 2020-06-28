@@ -1,0 +1,23 @@
+input[type=checkbox] {    
+    transform: scale(2); 
+    margin-left: 20px;        
+}
+
+.centralizar-vertical {  
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;    
+    background-color: white;     
+}
+
+.desafio-equipe-sigla p {
+    margin: 0px;
+    margin-left: 15px;
+}
+

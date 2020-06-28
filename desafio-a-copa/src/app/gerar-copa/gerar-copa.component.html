@@ -1,0 +1,28 @@
+    <app-header-copa 
+    [fase]="HEADER_FASE" 
+    [descricao]="HEADER_DESCRICAO"
+    [complemento]="HEADER_COMPLEMENTO"></app-header-copa>
+
+  <div class="row desafio-sub-header">
+    <div class="col-sm desafio-sub-header-Selecionados">
+      <p>Selecionados</p>
+      <p>0 de {{ equipesSelecionadas.length }} equipes</p>
+    </div>
+    <div class="mensagem">
+      {{ mensagem }}
+    </div>
+    <div class="col-sm text-right">
+      <button [disabled]="equipesSelecionadas.length != TAMANHO_ARRAY_EQUIPES"
+      [ngClass]="(equipesSelecionadas.length != TAMANHO_ARRAY_EQUIPES) ? 'desafio-btn-gerar-copa-disabled' : 'desafio-btn-gerar-copa'"
+      (click)="gerarCopa()">Gerar Copa</button>
+    </div>
+  </div>
+
+  <div class="">
+    <div class="row desafio-grupo-equipes">
+      <div *ngFor="let equipe of equipesDaCopa" class="col-3 desafio-card-equipe">        
+        <app-desafio-card-equipe [nomeEquipe]="equipe.nome" [siglaEquipe]="equipe.sigla"
+         [equipe]=equipe (onSelect)="atualizeSelecionados($event)"></app-desafio-card-equipe>      
+      </div>
+    </div>
+  </div>

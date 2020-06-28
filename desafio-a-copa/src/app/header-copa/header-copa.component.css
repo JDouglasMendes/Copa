@@ -1,0 +1,25 @@
+.desafio-logo {
+    background-color: gray;
+    height: 180px;       
+}
+
+.desafio-logo  p {
+    text-align: center;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.desafio-logo  p:nth-child(1) {
+    padding-top: 30px;
+}
+
+#desafio-logo-fase {
+    font-size: 36px;
+}
+
+#desafio-logo-divisor {
+    width: 150px;
+    background-color: lightgray;
+    margin-bottom: 30px;     
+}

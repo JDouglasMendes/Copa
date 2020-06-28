@@ -1,0 +1,7 @@
+<app-header-copa [fase]="HEADER_FASE" [descricao]="HEADER_DESCRICAO"></app-header-copa>
+
+<div class="container-fluid resultado-copa">  
+  <app-resultado-card-equipe *ngFor="let equipe of equipesDaCopa; let posicao = index" 
+  [posicao]="posicao + 1"
+  [nomeEquipe]="equipe.nome" ></app-resultado-card-equipe>  
+</div>
