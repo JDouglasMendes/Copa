@@ -42,11 +42,11 @@ Visual Code - Front End | Visual Studio - Back End
 * Esse projeto tem configurado o _CI_ para obter a porcentagem de cobertura e a quantidade de testes a cada commit.
 * Existe dois projetos de testes, a saber:
   * __Copa.Domain.Test:__ para testes regra de negocio.
-  * __Copa.Web.API.Integration.Test:__ para testes de integração com considerando deste o controller até a conclusão da chamada.
+  * __Copa.Web.API.Integration.Test:__ para testes de integração considerando desde o controller até a conclusão do request.
 * Para executar com _Visual Studio_ compilar a aplicação, escolha uma das formas abaixo para executar:
   * Atalho: __CRTL+R,A__
   * Menu->Test->Run All Tests
-* Para executar com _Visual Studio Code_ compilar a aplicação, execute os passos abaixo:  
+* Para executar com _Visual Studio Code_ compilar a aplicação, execute o passo abaixo:  
   * Executar o comando `dotnet test Copa.sln` dentro da basta _Copa_
   
   
