@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Copa.Application\Copa.Application.csproj" />
     <ProjectReference Include="..\Copa.Domain\Copa.Domain.csproj" />
   </ItemGroup>
 

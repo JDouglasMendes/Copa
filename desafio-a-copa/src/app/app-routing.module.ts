@@ -7,6 +7,7 @@ import { ResultadoCopaComponent } from './resultado-copa/resultado-copa.componen
 const routes: Routes = [
   { path: 'gerar-copa', component: GerarCopaComponent },
   { path: 'resultado-copa/:resultado', component: ResultadoCopaComponent },
+  { path: '', redirectTo: '/gerar-copa', pathMatch: 'full' },
 ];
 
 @NgModule({

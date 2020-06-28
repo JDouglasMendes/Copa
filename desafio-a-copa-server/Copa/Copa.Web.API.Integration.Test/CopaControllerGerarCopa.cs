@@ -14,7 +14,7 @@ namespace Copa.Web.API.Integration.Test
         [Fact]
         public async Task GerarCopa()
         {
-            var equipes = EquipeBuilder.CrieEquipesAleatorias(8);
+            var equipes = EquipeBuilder.CrieEquipesViewModelAletorias(8);            
             var response = await Client.PostAsync("/api/copa/processar-copa", equipes.ToJson());
             response.EnsureSuccessStatusCode();
             var resultadoCopa = await JsonToObject<Guid>.Convert(response);

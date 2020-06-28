@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Equipe } from '../equipes/equipe';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CopaService } from '../services/copa-service';
 
 @Component({
@@ -16,7 +16,8 @@ export class ResultadoCopaComponent implements OnInit {
   public equipesDaCopa:Array<Equipe>;
   
   constructor(private activatedRoute: ActivatedRoute,
-    private copaService: CopaService) {
+    private copaService: CopaService,
+    private router: Router) {
     this.equipesDaCopa = new Array<Equipe>();
   }
 
@@ -30,6 +31,10 @@ export class ResultadoCopaComponent implements OnInit {
     }, (error) => {
       console.log(error);
     });
+  }
+
+  selecioneNovasEquipes(){
+    this.router.navigate(['/gerar-copa']);
   }
 
 }

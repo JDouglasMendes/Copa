@@ -12,10 +12,10 @@ namespace Copa.Domain.Copa.Partidas
 
         public Equipe ExecuteRegra(Equipe primeiraEquipe, Equipe segundaEquipe)
         {
-            if(primeiraEquipe.Nome.ExisteNumeroNaString() && segundaEquipe.Nome.ExisteNumeroNaString())
+            if(primeiraEquipe.ExisteNumeroNoNome() && segundaEquipe.ExisteNumeroNoNome())
             {
-                var numeroPrimeiraEquipe = primeiraEquipe.Nome.GetNumero();
-                var numeroSegundaEquipe = segundaEquipe.Nome.GetNumero();
+                var numeroPrimeiraEquipe = primeiraEquipe.GetNumeroNomeEquipe();
+                var numeroSegundaEquipe = segundaEquipe.GetNumeroNomeEquipe();
 
                 if (numeroPrimeiraEquipe < numeroSegundaEquipe)
                     return primeiraEquipe;

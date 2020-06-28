@@ -18,7 +18,7 @@ namespace Copa.Domain.Test.Copa.Partidas
             var eq1 = EquipeBuilder.CrieEquipeRegraNomeAlfanumerico(equipe1);
             var eq2 = EquipeBuilder.CrieEquipeRegraNomeAlfanumerico(equipe2);
             var result = regra.ExecuteRegra(eq1, eq2);
-            Assert.Equal(resultado, result.Nome);
+            Assert.Equal(resultado, result.NomeEquipe.NomeCompleto);
         }
     }
 }

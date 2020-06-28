@@ -1,4 +1,5 @@
-﻿using Copa.Domain.Entities;
+﻿using Copa.Application.ViewModels;
+using Copa.Domain.Entities;
 using Microsoft.VisualBasic.CompilerServices;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,24 @@ namespace Copa.Domain.Test.CenarioBuilderTest
                 quantidade--;
             }
             return retorno;
+        }
+
+        public static List<EquipeViewModel> CrieEquipesViewModelAletorias(short quantidade)
+        {
+            var retorno = new List<EquipeViewModel>(quantidade);
+            while (quantidade > 0)
+            {
+                retorno.Add(new EquipeViewModel
+                {
+                    Id = Guid.NewGuid(),
+                    Gols = quantidade,
+                    Nome = "EQUIPE " + quantidade,
+                    Sigla = "EQP"
+                });
+                quantidade--;
+            }
+
+            return retorno; 
         }
 
         public static Equipe CrieEquipeRegraNomeAlfanumerico(string nome) =>

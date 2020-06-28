@@ -17,7 +17,7 @@ namespace Copa.Domain.Copa.FasesCopa
         
         public IList<Equipe> ExecuteFase(List<Equipe> equipes)
         {
-            equipes.Sort((x, y) => x.Nome.CompareTo(y.Nome));
+            equipes.Sort((x, y) => x.NomeEquipe.CompareTo(y.NomeEquipe));
             var partidas = _regraDefinicaoPartida.DefinaPartidasDaFase(equipes);
             var participantesProximaFase = new List<Equipe>(equipes.Count / 2);
             partidas.ForEach(partida => participantesProximaFase.Add(partida.ObtenhaVencedor()));

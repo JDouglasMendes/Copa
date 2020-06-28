@@ -12,9 +12,9 @@ namespace Copa.Domain.Copa.Partidas
 
         public Equipe ExecuteRegra(Equipe primeiraEquipe, Equipe segundaEquipe)
         {
-            if(primeiraEquipe.Nome.GetPrimeiraDescricao().Equals(segundaEquipe.Nome.GetPrimeiraDescricao(), StringComparison.OrdinalIgnoreCase))
+            if(primeiraEquipe.GetPrimeiroNome().Equals(segundaEquipe.GetPrimeiroNome(), StringComparison.OrdinalIgnoreCase))
             {
-                if (primeiraEquipe.Nome.Length < segundaEquipe.Nome.Length)
+                if (primeiraEquipe.TamanhoNome < segundaEquipe.TamanhoNome)
                     return primeiraEquipe;
 
                 return segundaEquipe;
