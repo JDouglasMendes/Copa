@@ -1,5 +1,4 @@
 ﻿using Copa.Application.ViewModels;
-using Copa.Domain.Test.CenarioBuilderTest;
 using System;
 using System.Collections.Generic;
 using System.Linq;

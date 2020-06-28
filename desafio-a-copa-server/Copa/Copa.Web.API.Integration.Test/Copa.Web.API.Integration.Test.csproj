@@ -19,7 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Copa.Domain.Test\Copa.Domain.Test.csproj" />
     <ProjectReference Include="..\Copa.Web.API\Copa.Web.API.csproj" />
   </ItemGroup>
 
