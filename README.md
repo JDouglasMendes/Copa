@@ -8,6 +8,7 @@ Implementação do desafio Copa de Equipes.
 ![GitHub repo size](https://img.shields.io/github/repo-size/jdouglasmendes/Copa)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jdouglasmendes/Copa)
 ![Azure DevOps tests (compact)](https://img.shields.io/azure-devops/tests/douglasaleixomendes/copa/2)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/douglasaleixomendes/Copa/2)
 
 ### Frameworks e linguagens utilizadas na implementação da aplicação
 C# | Typescript | Asp Net Core 3.1 | Angular 10 | XUnit | RestSharp | AutoMapper
@@ -33,6 +34,7 @@ Visual Code - Front End | Visual Studio - Back End
     * Acessar o browser no endereço _localhost:5000/api/equipe_ (Caso queira confirmar que está em execução)
   
 ### Passos necessários para executar os testes unitários
+* Esse projeto tem configurado o _CI_ para obter a porcentagem de cobertura e a quantidade de testes a cada commit.
 * Existe dois projetos de testes, a saber:
   * __Copa.Domain.Test:__ para testes regra de negocio.
   * __Copa.Web.API.Integration.Test:__ para testes de integração com considerando deste o controller até a conclusão da chamada.
