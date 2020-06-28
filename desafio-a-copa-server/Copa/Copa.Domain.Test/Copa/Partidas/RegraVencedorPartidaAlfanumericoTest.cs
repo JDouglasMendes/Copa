@@ -12,6 +12,7 @@ namespace Copa.Domain.Test.Copa.Partidas
         [Theory]
         [InlineData("teste","ateste", "ateste")]
         [InlineData("teste1", "bteste", "bteste")]
+        [InlineData("bteste", "teste1", "bteste")]
         public void ExecuteRegra(string equipe1, string equipe2, string resultado)
         {
             var regra = new RegraVencedorPartidaAlfanumerico();

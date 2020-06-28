@@ -12,7 +12,7 @@ namespace Copa.Domain.Test.Utils
         [InlineData("teste  ", "teste ")]
         [InlineData("teste  teste", "teste teste")]
         public void RetiraEspacoDuplicadoTest(string valor, string result) =>
-             Assert.Equal(result, valor.RetiraEspacoDuplicado());
+             Assert.Equal(result, StringUtil.RetiraEspacoDuplicado(valor));
         
         [Theory]
         [InlineData("teste  ", false)]
@@ -20,7 +20,7 @@ namespace Copa.Domain.Test.Utils
         [InlineData("teste 1  ", true)]
         [InlineData("teste 100  ", true)]
         public void ExisteNumeroNaString(string valor, bool result) =>
-            Assert.Equal(result, valor.ExisteNumeroNaString());
+            Assert.Equal(result, StringUtil.ExisteNumeroNaString(valor));
         
 
         [Theory]
@@ -29,14 +29,14 @@ namespace Copa.Domain.Test.Utils
         [InlineData("teste1  ", -1)]
         [InlineData("teste 100 ", 100)]
         public void GetNumero(string valor, decimal result) =>
-             Assert.Equal(result, valor.GetNumero());
+             Assert.Equal(result, StringUtil.GetNumero(valor));
         
 
         [Theory]
         [InlineData("teste", "teste")]
         [InlineData("teste  teste", "teste")]
         public void GetPrimeiraDescricao(string valor, string result) =>
-            Assert.Equal(result, valor.GetPrimeiraDescricao());
+            Assert.Equal(result, StringUtil.GetPrimeiraDescricao(valor));
         
     }
 }
