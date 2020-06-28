@@ -10,9 +10,38 @@ Implementação do desafio Copa de Equipes.
 ![Azure DevOps tests (compact)](https://img.shields.io/azure-devops/tests/douglasaleixomendes/copa/2)
 
 ### Frameworks e linguagens utilizadas na implementação da aplicação
-C# | Typescript | Asp Net Core | Angular | XUnit
-### Ferramentas necessárias para executar a aplicação
+C# | Typescript | Asp Net Core 3.1 | Angular 10 | XUnit | RestSharp | AutoMapper
+
+### Ferramentas recomendadas para executar a aplicação
+Visual Code - Front End | Visual Studio - Back End
 
 ### Passos necessários para executar a aplicação
-
+* Clonar o projeto ou baixar do github.
+* Para executar o Front End
+  * Entrar na pasta desafio-a-copa
+  * Executar o comando `npm install`, aguarde a finalização.
+  * Executar o comando `ng serve`, aguarde a finalização.
+  * Acessar o browser no endereço __localhost:4200__
+* Para executar o Back End
+  * Entrar na pasta desafio-a-copa-server
+  * Se utilizar _Visual Studio_ compilar o projeto e executar preferencialmente pela opção _Copa.Web.API_
+  * Se utilizar _Visual Studio Code_
+    * Abrir a pasta _Copa_
+    * Executar o comando `dotnet restore`
+    * Entrar na pasta _Copa.Web.API_
+    * Executar o comando `dotnet rum`
+    * Acessar o browser no endereço _localhost:5000/api/equipe_ (Caso queira confirmar que está em execução)
+  
+### Passos necessários para executar os testes unitários
+* Existe dois projetos de testes, a saber:
+  * __Copa.Domain.Test:__ para testes regra de negocio.
+  * __Copa.Web.API.Integration.Test:__ para testes de integração com considerando deste o controller até a conclusão da chamada.
+* Para executar com _Visual Studio_ compilar a aplicação, escolha uma das formas abaixo para executar:
+  * Atalho: __CRTL+R,A__
+  * Menu->Test->Run All Tests
+* Para executar com _Visual Studio Code_ compilar a aplicação, execute os passos abaixo:  
+  * Executar o comando `dotnet test Copa.sln` dentro da basta _Copa_
+  
+  
+  
 
