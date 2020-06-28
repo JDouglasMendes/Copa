@@ -31,7 +31,7 @@ Visual Code - Front End | Visual Studio - Back End
     * Executar o comando `dotnet restore`
     * Entrar na pasta _Copa.Web.API_
     * Executar o comando `dotnet rum`
-    * Acessar o browser no endereço _localhost:5000/api/equipe_ (Caso queira confirmar que está em execução)
+    * Acessar o browser no endereço _http://localhost:5000/swagger_ (Caso queira confirmar que está em execução)
   
 ### Passos necessários para executar os testes unitários
 * Esse projeto tem configurado o _CI_ para obter a porcentagem de cobertura e a quantidade de testes a cada commit.
