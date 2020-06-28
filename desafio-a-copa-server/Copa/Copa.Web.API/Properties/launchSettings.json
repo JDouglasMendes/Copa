@@ -20,7 +20,7 @@
     "Copa.Web.API": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/equipe",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
