@@ -25,10 +25,11 @@ steps:
   inputs:
     command: 'test'
     projects: '**/*.sln'
+    arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Exclude="[xunit*]\*" /p:CoverletOutput=$(Build.SourcesDirectory)/TestResults/Coverage/'
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
-    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.cobertura.xml'
     
 - script: |
     echo Add other tasks to build, test, and deploy your project.
